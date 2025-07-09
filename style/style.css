@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #aaaa;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.alimento {
+    background-color: #fafafa;
+    border-radius: 20px;
+    height: 12rem;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+
+}
+.nombre-alimento {
+    font-size: 1.2rem
+}
+.cantidad {
+    text-align: center;
+}
+.contador {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    width: 25%;
+    height: 1.9rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+button {
+    border-radius: 5px;
+    width: 2rem;
+    height: 2rem;
+    background-color: #0a0a0a;
+    color: #fafafa;
+    padding: .5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
