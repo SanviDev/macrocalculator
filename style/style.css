@@ -56,3 +56,21 @@ button {
     align-items: center;
     border: none;
 }
+
+#resetButton {
+    width: 6rem;
+    height: 2rem;
+    background-color: #0a0a0a;
+    color: #fafafa;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    margin: 0 auto 2rem auto;
+}
+h2 {
+    text-align: center;
+}
+.restantes {
+    margin: 0 auto;
+    text-align: center;
+}

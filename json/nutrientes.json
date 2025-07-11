@@ -185,12 +185,12 @@
       "carbohidratos": 66
     },
     {
-      "nombre": "Leche (entera) (en gramos)",
-      "cantidad_gramos": 100,
-      "kcal": 61,
-      "proteina": 3.2,
-      "grasas": 3.3,
-      "carbohidratos": 4.8
+      "nombre": "Leche (descremada) (en mL)",
+      "cantidad_gramos": 200,
+      "kcal": 66,
+      "proteina": 6.2,
+      "grasas": 0.4,
+      "carbohidratos": 9.4
     },
     {
       "nombre": "Queso (magro tipo Port Salut) (en gramos)",
