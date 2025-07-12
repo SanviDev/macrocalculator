@@ -178,11 +178,11 @@
     },
     {
       "nombre": "Avena (en gramos)",
-      "cantidad_gramos": 100,
-      "kcal": 389,
-      "proteina": 13,
-      "grasas": 7,
-      "carbohidratos": 66
+      "cantidad_gramos": 30,
+      "kcal": 118,
+      "proteina": 3.8,
+      "grasas": 3,
+      "carbohidratos": 19
     },
     {
       "nombre": "Leche (descremada) (en mL)",
