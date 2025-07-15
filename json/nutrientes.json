@@ -41,6 +41,22 @@
       "carbohidratos": 0
     },
     {
+      "nombre": "Pollo (muslo con piel) (en gramos)",
+      "cantidad_gramos": 100,
+      "kcal": 215,
+      "proteina": 26,
+      "grasas": 12,
+      "carbohidratos": 0
+    },
+    {
+      "nombre": "Pollo (muslo sin piel) (en gramos)",
+      "cantidad_gramos": 100,
+      "kcal": 175,
+      "proteina": 27,
+      "grasas": 7.2,
+      "carbohidratos": 0
+    },
+    {
       "nombre": "Zanahoria (en gramos)",
       "cantidad_gramos": 100,
       "kcal": 41,
