@@ -1,4 +1,5 @@
 const jsonPath = "./../json/nutrientes.json";
+const kcalRestantes = document.getElementById("kcalRestantes");
 const proteinasRestantes = document.getElementById("proteinasRestantes");
 const grasasRestantes = document.getElementById("grasasRestantes");
 const carbohidratosRestantes = document.getElementById("carbohidratosRestantes");
@@ -35,6 +36,7 @@ function actualizarValores() {
     localStorage.setItem("proteinas", proteinas);
     localStorage.setItem("grasas", grasas);
     localStorage.setItem("carbohidratos", carbohidratos);
+    kcalRestantes.textContent = kcal.toFixed(2);
     proteinasRestantes.textContent = proteinas.toFixed(2);
     grasasRestantes.textContent = grasas.toFixed(2);
     carbohidratosRestantes.textContent = carbohidratos.toFixed(2);
