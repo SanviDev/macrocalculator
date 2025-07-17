@@ -33,6 +33,7 @@ let grasas = parseFloat(localStorage.getItem("grasas"));
 let carbohidratos = parseFloat(localStorage.getItem("carbohidratos"));
 // Actualizar valores en LocalStorage
 function actualizarValores() {
+    localStorage.setItem("kcal", kcal);
     localStorage.setItem("proteinas", proteinas);
     localStorage.setItem("grasas", grasas);
     localStorage.setItem("carbohidratos", carbohidratos);
