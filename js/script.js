@@ -8,18 +8,25 @@ const resetButton = document.getElementById("resetButton");
 
 
 // Guardar valores en LocalStorage
+
+if (!localStorage.getItem("kcal")) {
+    localStorage.setItem("kcal", 3536);
+}
+
 if (!localStorage.getItem("proteinas")) {
-    localStorage.setItem("proteinas", 140);
+    localStorage.setItem("proteinas", 177);
 }
 
 if (!localStorage.getItem("grasas")) {
-    localStorage.setItem("grasas", 70);
+    localStorage.setItem("grasas", 98);
 }
 
 if (!localStorage.getItem("carbohidratos")) {
-    localStorage.setItem("carbohidratos", 353);
+    localStorage.setItem("carbohidratos", 486);
 }
 
+
+let kcal = parseFloat(localStorage.getItem("kcal"));
 let proteinas = parseFloat(localStorage.getItem("proteinas"));
 let grasas = parseFloat(localStorage.getItem("grasas"));
 let carbohidratos = parseFloat(localStorage.getItem("carbohidratos"));
@@ -67,12 +74,14 @@ fetch(jsonPath)
                     || nombre.toLowerCase() == "pera"
                     || nombre.toLowerCase() == "naranja"
                 ) {
+                    kcal -= (alimento.calorias * cantidad);
                     proteinas -= (alimento.proteina * cantidad);
                     grasas -= (alimento.grasas * cantidad);
                     carbohidratos -= (alimento.carbohidratos * cantidad);
                     actualizarValores();
                 } else {
                     const factor = cantidad / alimento.cantidad_gramos
+                    kcal -= (alimento.calorias * factor); 
                     proteinas -= (alimento.proteina * factor);
                     grasas -= (alimento.grasas * factor);
                     carbohidratos -= (alimento.carbohidratos * factor);
@@ -83,6 +92,7 @@ fetch(jsonPath)
     });
 
 resetButton.addEventListener("click", () => {
+    kcal = 3436;
     proteinas = 140;
     grasas = 70;
     carbohidratos = 353;
