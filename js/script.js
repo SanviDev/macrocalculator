@@ -74,14 +74,14 @@ fetch(jsonPath)
                     || nombre.toLowerCase() == "pera"
                     || nombre.toLowerCase() == "naranja"
                 ) {
-                    kcal -= (alimento.calorias * cantidad);
+                    kcal -= (alimento.kcal * cantidad);
                     proteinas -= (alimento.proteina * cantidad);
                     grasas -= (alimento.grasas * cantidad);
                     carbohidratos -= (alimento.carbohidratos * cantidad);
                     actualizarValores();
                 } else {
                     const factor = cantidad / alimento.cantidad_gramos
-                    kcal -= (alimento.calorias * factor); 
+                    kcal -= (alimento.kcal * factor); 
                     proteinas -= (alimento.proteina * factor);
                     grasas -= (alimento.grasas * factor);
                     carbohidratos -= (alimento.carbohidratos * factor);
